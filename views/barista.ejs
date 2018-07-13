@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+    <title>El Cafe</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+
+    <!-- <div class="containerCompleOrder"> -->
+        <img src="img/cafe.jpg" alt="Coffee Logo">
+        <h1 class="baristaWelcome">Welcome Barista</h1>
+
+         <section class ="containerOrder">
+           <h3>Orders Pending</h3>
+          <ul class="messages">
+          <% for(var i=0; i<messages.length; i++) {%>
+            <% if(messages[i].complete === false) {%>
+            <li class="orders">
+              <span><%= user.local.email %> Entered</span>
+              <span><%= messages[i].order %></span>
+              <span><%= messages[i].size %></span>
+              <span><%= messages[i].customer %></span>
+              <span><i class="fas fa-check"></i></span>
+            </li>
+          <% } %>
+          <% } %>
+          </ul>
+        </section>
+
+        <section class ="containerCompleted">
+          <h3>Orders Completed</h3>
+         <ul class="messages">
+         <% for(var i=0; i<messages.length; i++) {%>
+           <% if(messages[i].complete === true) {%>
+           <li class="orders">
+             <span><%= user.local.email %></span>
+             <span><%= messages[i].order %></span>
+             <span><%= messages[i].size %></span>
+             <span>For <%= messages[i].customer %></span>
+           </li>
+         <% } %>
+         <% } %>
+         </ul>
+       </section>
+
+
+
+        <p>Or go <a href="/">home</a>.</p>
+        <p>Or go <a href="/userchoice">back</a>.</p>
+    <!-- </div> -->
+</div>
+<script src="baristamain.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+.clearfix {
+  overflow: auto;
+}
+body{
+  word-wrap:break-word;
+  background-color:pink;
+}
+img{
+  float: left;
+  margin-left: 40%;
+  margin-right: 40%;
+  height: 200px;
+  text-align: center;
+}
+
+.cafeOption1,.cafeOption2,.cafeOption3,.cafeOption4,.submitButton{
+	box-shadow:inset 0px 1px 0px 0px #9acc85;
+  background: linear-gradient(to bottom, #74ad5a 5%, #68a54b 100%);
+	background-color:#74ad5a;
+	border:1px solid #3b6e22;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:12px 24px;
+	text-decoration:none;
+}
+.sizeOption1,.sizeOption2,.sizeOption3,.sizeOption4{
+  box-shadow:inset 0px 1px 0px 0px #54a3f7;
+  background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+	background-color:#007dc1;
+	border:1px solid #124d77;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:12px 24px;
+	text-decoration:none;
+}
+.cafeOption1:active,.cafeOption2:active,.cafeOption3:active,.cafeOption4:active,.submitButton:active{
+	position:relative;
+	top:3px;
+}
+
+.sizeOption1:active,.sizeOption2:active,.sizeOption3:active,.sizeOption4:active{
+  position:relative;
+  top:3px;
+}
+
+.submitButton{
+	box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+	background-color:#768d87;
+	border-radius:15px;
+	border:1px solid #566963;
+}
+.messages{
+  list-style-type: none;
+  display: inline-block;
+}
+.messages li{
+  float: left;
+}
+
+.completedButton{
+background-color:#44c767;
+border-radius:28px;
+border:1px solid #18ab29;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-family:Arial;
+font-size:17px;
+padding:8px 16px;
+text-decoration:none;
+text-shadow:0px 1px 0px #2f6627;
+}
+.completedButton:hover {
+background-color:#5cbf2a;
+}
+.myButton:active {
+position:relative;
+top: 3px;
+}
+.choiceSize{
+  margin-bottom: 25px;
+}
+.containerOrder,.containerCompleted{
+  width: 40%;
+  height: 200px;
+  overflow-y: auto;
+  float: left;
+  text-align: center;
+  margin-right: 10%;
+  background: white;
+}
+
+.baristaWelcome{
+  padding-top: 25px;
+  padding-bottom: 30px;
+  padding-right: 76%;
+  float: left;
+}
