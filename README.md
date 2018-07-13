@@ -26,9 +26,10 @@ We needed to Create an app that with two interfaces. One interface for a  cashie
 
 ## Optimizations
 
-The code pushed is not complete and is missing a few features. It is missing the ability for the barista to mark a complete order, name of the cashier that completed the order. The bonus points are missing as well
+The code pushed is not complete and is missing a few features. It is missing the ability for the barista to mark a complete order, name of the cashier that completed the order. The bonus points are missing as well.
 
 The new push has new functionality such as the barista now has the ability to complete the order. Name of the cashier is now appearing and the customer as well. Javascript has been edited to be "dryer"
+
 =======
 
 ## How It's Made:
